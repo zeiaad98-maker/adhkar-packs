@@ -1,0 +1,39 @@
+{
+  "repo": "zeiaad98-maker/adhkar-packs",
+  "branch": "main",
+  "base": "https://raw.githubusercontent.com/zeiaad98-maker/adhkar-packs/main/packs/",
+  "note": "Verbatim split of ~/workspace/apk-build/packs-v9/ only. No invented text. Empty {} means the source has no entries for that surah.",
+  "packs": {
+    "jalalayn": {
+      "files": "packs/jalalayn/{1..114}.json",
+      "entries": 6236
+    },
+    "irab": {
+      "files": "packs/irab/{1..114}.json, plus packs/irab/2a.json and 2b.json instead of 2.json (Baqarah split by ayah 1-143 / 144-286 to stay under the push file-size limit)",
+      "entries": 6236
+    },
+    "sarraj": {
+      "files": "packs/sarraj/{1..114}.json",
+      "entries": 3654,
+      "note": "Source limit, not a gap: only 3654 entries in source."
+    },
+    "asbab": {
+      "files": "packs/asbab/{1..114}.json",
+      "entries": 504,
+      "note": "Source limit: entries in 83 surahs only; other surah files are {}."
+    },
+    "tadabbur": {
+      "files": "packs/tadabbur/{1..114}.json",
+      "entries": 6235,
+      "note": "Source missing only 80:21, which is absent, not invented."
+    },
+    "surah_info": {
+      "files": "packs/surah_info/{1..114}.json",
+      "entries": "114 surahs, 1026 fields"
+    },
+    "page_benefits": {
+      "files": "packs/page_benefits/{1..604}.json",
+      "entries": 2212
+    }
+  }
+}
